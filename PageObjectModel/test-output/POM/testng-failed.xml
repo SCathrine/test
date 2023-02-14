@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [POM]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Parallel(failed)">
+    <classes>
+      <class name="testcases.DeleteLeadTC">
+        <methods>
+          <include name="setfile"/>
+          <include name="postConditions"/>
+          <include name="runDeleteTC" invocation-numbers="0 1"/>
+          <include name="preConditions"/>
+        </methods>
+      </class> <!-- testcases.DeleteLeadTC -->
+    </classes>
+  </test> <!-- Parallel(failed) -->
+</suite> <!-- Failed suite [POM] -->
